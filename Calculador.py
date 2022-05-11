@@ -4,7 +4,9 @@ from calculaFecha import CalculaFecha #En caso de error, revisar la ruta del arc
 import Parser
 
 if __name__ == "__main__":
-	dia = Parser.parser.dia
-	print(dia)
-	obj1 = CalculaFecha(7,5,2022)
-	obj1.calcularFecha(365)
+	dia = Parser.args.dia
+	mes = Parser.args.mes
+	anio = Parser.args.anio
+	diasSumados = Parser.args.calcD
+	obj1 = CalculaFecha(dia,mes,anio)
+	obj1.calcularFecha(diasSumados)

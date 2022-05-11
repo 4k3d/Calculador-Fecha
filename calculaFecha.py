@@ -16,11 +16,9 @@ class CalculaFecha():
 		self.anio = anio
 		
 	def calcularFecha(self, diasAd = int):
-		print("La fecha que ingresaste es:", self.dia, "de", self.mes,"de", self.anio,"bandera: ",self.dias31o30[self.mes])
+		print("La fecha que ingresaste es:", self.dia, "de", self.mes,"de", self.anio,"bandera: ")
 		print("Quieres saber que fecha sera", diasAd ,"dias despues")
 		diasContador = self.dia
-		#print("Dias totales son: ",diasT)
-		#import pdb; pdb.set_trace()
 		while (diasAd > 0):
 			if(self.mes == 2 and not self.bisiesto): #Bisiesto es de 29 dias
 				if(diasContador == 28):
