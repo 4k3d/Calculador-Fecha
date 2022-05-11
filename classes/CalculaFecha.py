@@ -16,7 +16,7 @@ class CalculaFecha():
 		self.anio = anio
 		
 	def calcularFecha(self, diasAd = int):
-		print("La fecha que ingresaste es:", self.dia, "de", self.mes,"de", self.anio,"bandera: ")
+		print("La fecha que ingresaste es:", self.dia, "de", self.mes,"de", self.anio)
 		print("Quieres saber que fecha sera", diasAd ,"dias despues")
 		diasContador = self.dia
 		while (diasAd > 0):
