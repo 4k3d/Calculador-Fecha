@@ -58,4 +58,4 @@ class FechaActual():
 
 if __name__ == "__main__":
 	obj1 = FechaActual(7,5,2022)
-	obj1.calcularFecha(365)
+	obj1.calcularFecha(731)
