@@ -7,4 +7,4 @@ Dentro de este mismo directorio también está el objeto parser que se encarga d
 https://docs.python.org/3/library/argparse.html
 En el directorio raíz solo está mi rutina main.
 
-Para saber como usar la clase solo corre: $:python3 Calculador.py -h
+Para saber como usar la clase solo corre: python3 Calculador.py -h
