@@ -1,9 +1,13 @@
 class CalculaFecha():
 
 	def __init__(self,dia : int,mes : int,anio : int):
-		self.dias31o30 = {1:True,2:False, 3:True, 4:False,5:True,6:False,7:True,8:True,9:False,10:True,11:False,12:True,}
-		self.bisiesto = False
-		if(anio % 4 == 0):
+		
+		self.dias31o30 = {1:True,2:False, 3:True, 
+		4:False,5:True,6:False,7:True,8:True,
+		9:False,10:True,11:False,
+		12:True,} #Diccionario en donde guardo que meses tienen 31 dias (True) o menos de 31 (false)		
+		self.bisiesto = False #Bandera para saber si estoy en un año bisiesto		
+		if(anio % 4 == 0): #Condicional para setear la bandera en un estado inicial
 			self.bisiesto = True
 		else:
 			self.bisieto = False
