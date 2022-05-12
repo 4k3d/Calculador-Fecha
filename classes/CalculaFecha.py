@@ -18,30 +18,29 @@ class CalculaFecha():
 	def calcularFecha(self, diasAd = int):
 		print("La fecha que ingresaste es:", self.dia, "de", self.mes,"de", self.anio)
 		print("Quieres saber que fecha sera", diasAd ,"dias despues")
-		diasContador = self.dia
 		while (diasAd > 0):
 			if(self.mes == 2 and not self.bisiesto): #Bisiesto es de 29 dias
-				if(diasContador == 28):
-					diasContador = 1
+				if(self.dia == 28):
+					self.dia = 1
 					diasAd = diasAd - 1
 					self.mes = self.mes + 1
 					continue
 			elif(self.mes == 2 and self.bisiesto):
-				if(diasContador == 29):
-					diasContador = 1
+				if(self.dia == 29):
+					self.dia = 1
 					diasAd = diasAd - 1
 					self.mes = self.mes + 1
 					continue
 			
-			if(diasContador == 30 and self.dias31o30[self.mes] == False):
+			if(self.dia == 30 and self.dias31o30[self.mes] == False):
 				self.mes = self.mes + 1
-				diasContador = 1
+				self.dia = 1
 				diasAd = diasAd - 1
 				continue
 				
-			if(diasContador == 31):
+			if(self.dia == 31):
 				self.mes = self.mes + 1
-				diasContador = 1
+				self.dia = 1
 				diasAd = diasAd - 1
 				if(self.mes == 13):
 					self.mes = 1
@@ -50,7 +49,7 @@ class CalculaFecha():
 					
 			
 			diasAd = diasAd - 1
-			diasContador = diasContador + 1
+			self.dia = self.dia + 1
 						
-		print("La fecha que dio es dia:", diasContador, "mes:",self.mes,"anio:",self.anio)
+		print("La fecha que dio es dia:", self.dia, "mes:",self.mes,"anio:",self.anio)
 
