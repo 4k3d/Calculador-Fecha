@@ -50,6 +50,7 @@ class CalculaFecha():
 			
 			diasAd = diasAd - 1
 			self.dia = self.dia + 1
+			#Fin del scope del while#
 						
 		print("La fecha que dio es dia:", self.dia, "mes:",self.mes,"anio:",self.anio)
 
