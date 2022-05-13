@@ -45,6 +45,10 @@ class CalculaFecha():
 				if(self.mes == 13):
 					self.mes = 1
 					self.anio = self.anio + 1
+					if(self.anio % 4 == 0): 
+						self.bisiesto = True
+					else:
+						self.bisieto = False
 				continue
 					
 			
